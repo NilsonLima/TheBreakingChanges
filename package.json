@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
+    "deploy": "yarn run build && aws s3 sync out s3://thebreakingchanges.com/ --profile nilson_ljnr",
     "start": "next start"
   },
   "dependencies": {
