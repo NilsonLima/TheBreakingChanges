@@ -7,15 +7,15 @@ export default function Layout({ children }) {
       <div className="bg-gradient-to-r from-zinc-800 to-zinc-900">
         <nav className="flex items-center justify-end space-x-8 py-8 px-10 bg-gradient-to-r from-zinc-800 to-zinc-900">
           <span className="text-white uppercase hover:underline">
-            <Link href="articles">Home</Link>
+            <Link href="/">Home</Link>
           </span>
           <span className="text-white uppercase hover:underline">
-            <Link href="about">About</Link>
+            <Link href="/about">About</Link>
           </span>
         </nav>
         <div className="flex flex-col items-center pt-8 pb-16 md:pt-12 md:pb-24 px-10">
           <span className="text-white text-center text-5xl md:text-6xl lg:text-7xl font-extrabold">
-            The Breaking Changes
+            <Link href="/">The Breaking Changes</Link>
           </span>
           <div className="h-2 w-2 rounded-full bg-white my-8" />
           <p className="text-white text-center font-extralight md:text-lg lg:text-xl max-w-5xl">
@@ -23,12 +23,14 @@ export default function Layout({ children }) {
           </p>
         </div>
       </div>
-      {children}
+      <div className="px-8 py-4 md:max-w-full md:px-16 lg:max-w-7xl">
+        {children}
+      </div>
       <div className="bg-gradient-to-r from-zinc-800 to-zinc-900">
         <footer className="flex flex-col items-center py-20 px-10">
           <div className="rounded-full ring-1 ring-white w-24 h-24">
             <Image
-              src="/images/nilson_1.webp"
+              src="/images/nilson.webp"
               className="rounded-full"
               width="100%"
               height="100%"
@@ -39,9 +41,13 @@ export default function Layout({ children }) {
             Nilson de Lima
           </span>
           <p className="text-white text-center font-extralight md:text-md lg:text-lg max-w-4xl">
-            Just a normal guy writing down some tech stuff. Sincerely, I really hope it will be useful for you someday, somehow. Enjoy the trip ⛵️
+            Just a usual guy writing down some tech stuff. Currently working at <a href="https://pier.digital/" className="hover:underline">Pier Seguradora</a> as a software engineer in Brazil 🇧🇷
           </p>
-          <span className="text-white text-center text-sm font-extralight my-6">The Breaking Changes © 2022</span>
+          <div className="flex space-x-4 my-6">
+            <a href="https://github.com/NilsonLima" aria-label="Github profile"><Image src="/icons/github.svg" width={30} height={30} /></a>
+            <a href="https://www.linkedin.com/in/nilsonlimajr" aria-label="LinkedIn profile"><Image src="/icons/linkedin.svg" width={30} height={30} /></a>
+          </div>
+          <span className="text-white text-center text-sm font-extralight">© 2022 The Breaking Changes - All Rights Reserved - Domain Name</span>
         </footer>
       </div>
     </div>
