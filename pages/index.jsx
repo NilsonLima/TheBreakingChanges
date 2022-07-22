@@ -17,13 +17,15 @@ export default function Home({ posts }) {
           <div className='h-0.5 w-0.5 rounded-full bg-zinc-500' />
           <span>{`${readingTime} min read`}</span>
         </div>
-        <p className='text-left font-extralight mt-8 md:text-md lg:text-lg'>
-          {description}
-          {' '}
-          <span className='underline font-normal hover:text-sky-600'>
-            <Link href={slug}>Read more...</Link>
-          </span>
-        </p>
+        <div className='prose prose-lg md:prose-xl mt-8'>
+          <p>
+            {description}
+            {' '}
+            <span className='underline font-normal hover:text-sky-600'>
+              <Link href={slug}>Read more...</Link>
+            </span>
+          </p>
+        </div>
       </div>
     </div>
   ));

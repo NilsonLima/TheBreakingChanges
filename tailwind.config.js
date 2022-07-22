@@ -8,7 +8,17 @@ module.exports = {
     './src/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
-    extend: {},
+    extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            color: 'black',
+            fontWeight: '200',
+            maxWidth: '100%',
+          },
+        },
+      },
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),

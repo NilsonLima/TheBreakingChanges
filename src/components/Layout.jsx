@@ -18,12 +18,14 @@ export default function Layout({ children }) {
             <Link href="/">The Breaking Changes</Link>
           </span>
           <div className="h-2 w-2 rounded-full bg-white my-8" />
-          <p className="text-white text-center font-extralight md:text-lg lg:text-xl max-w-5xl">
-            Here you will find stories about how challenging and adventurous software engineering is. Content that matters. Allways. 
-          </p>
+          <div className="text-white text-center prose prose-lg md:prose-xl md:max-w-2xl lg:max-w-5xl">
+            <p>
+              Here you will find stories about how challenging and adventurous software engineering is. Content that matters. Allways. 
+            </p>
+          </div>
         </div>
       </div>
-      <div className="px-8 py-4 md:max-w-full md:px-16 lg:max-w-7xl">
+      <div className="px-8 py-4 md:max-w-full md:px-24 lg:max-w-7xl">
         {children}
       </div>
       <div className="bg-gradient-to-r from-zinc-800 to-zinc-900">
@@ -40,9 +42,11 @@ export default function Layout({ children }) {
           <span className="text-white text-center text-xl md:text-2xl font-extrabold my-6">
             Nilson de Lima
           </span>
-          <p className="text-white text-center font-extralight md:text-md lg:text-lg max-w-4xl">
-            Just a usual guy writing down some tech stuff. Currently working at <a href="https://pier.digital/" className="hover:underline">Pier Seguradora</a> as a software engineer in Brazil 🇧🇷
-          </p>
+          <div className="text-white text-center prose prose-lg md:prose-xl md:max-w-2xl lg:max-w-5xl">
+            <p>
+              Just an usual guy writing down some tech stuff. Currently working at <a href="https://pier.digital/" className="text-white font-extralight underline">Pier Seguradora</a> as a software engineer in Brazil 🇧🇷
+            </p>
+          </div>
           <div className="flex space-x-4 my-6">
             <a href="https://github.com/NilsonLima" aria-label="Github profile"><Image src="/icons/github.svg" width={30} height={30} /></a>
             <a href="https://www.linkedin.com/in/nilsonlimajr" aria-label="LinkedIn profile"><Image src="/icons/linkedin.svg" width={30} height={30} /></a>

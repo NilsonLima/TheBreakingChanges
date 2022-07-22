@@ -4,12 +4,14 @@ import md from 'markdown-it';
 
 export default function Post({ content, frontmatter }) {
   return (
-    <article className="prose mx-auto">
-      <h1 className="text-5xl font-bold">
-        {frontmatter.title}
-      </h1>
-      <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
-    </article>
+    <div className="py-10 md:py-14 lg:py-20">
+      <article>
+        <h1 className="font-extrabold text-4xl lg:text-5xl mb-10">
+          {frontmatter.title}
+        </h1>
+        <div className="prose prose-lg md:prose-xl overflow-x-auto" dangerouslySetInnerHTML={{ __html: md().render(content) }} />
+      </article>
+    </div>
   );
 }
 

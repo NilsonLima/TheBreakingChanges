@@ -8,9 +8,11 @@ export default function About() {
       <h1 className="font-extrabold text-4xl lg:text-5xl">
         About blog
       </h1>
-      <p className='text-left font-extralight mt-8 whitespace-pre-wrap md:text-md lg:text-lg'>
-        {aboutBlog}
-      </p>
+      <div className="prose prose-lg md:prose-xl mt-10">
+        <p className="whitespace-pre-wrap">
+          {aboutBlog}
+        </p>
+      </div>
     </div>
   );
 }
