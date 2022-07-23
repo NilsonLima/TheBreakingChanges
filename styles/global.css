@@ -13,3 +13,20 @@ html, body {
     font-family: 'Inter var', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
   }
 }
+
+pre code.hljs {
+  padding: 0;
+}
+
+:not(pre) > code {
+  background-color: rgb(241 245 249);
+  /* color: rgb(224 30 90); */
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: rgb(226 232 240);
+  padding: 0.2em;
+}
+
+pre > code {
+  background-color: transparent;
+}

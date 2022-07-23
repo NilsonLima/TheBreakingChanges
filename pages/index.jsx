@@ -21,9 +21,7 @@ export default function Home({ posts }) {
           <p>
             {description}
             {' '}
-            <span className='underline font-normal hover:text-sky-600'>
-              <Link href={slug}>Read more...</Link>
-            </span>
+            <a className='underline font-normal hover:text-sky-600' href={slug}>Read more...</a>
           </p>
         </div>
       </div>

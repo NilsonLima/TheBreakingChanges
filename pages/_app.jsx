@@ -2,6 +2,8 @@ import Head from 'next/head';
 
 import Layout from '../src/components/Layout';
 
+import 'highlight.js/styles/github-dark.css';
+
 import '../styles/global.css';
 
 export default function App({ Component, pageProps }) {
