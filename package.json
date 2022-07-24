@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
-    "deploy": "yarn run build && aws s3 sync out s3://thebreakingchanges.com/ --profile nilson_ljnr",
+    "deploy": ". ./bin/deploy.sh",
     "start": "next start"
   },
   "dependencies": {

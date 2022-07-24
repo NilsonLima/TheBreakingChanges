@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import Head from 'next/head';
 
 import Layout from '../src/components/Layout';
