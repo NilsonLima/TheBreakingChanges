@@ -20,7 +20,7 @@ pre code.hljs {
 
 :not(pre) > code {
   background-color: rgb(241 245 249);
-  /* color: rgb(224 30 90); */
+  color: black;
   border-radius: 4px;
   border-width: 1px;
   border-color: rgb(226 232 240);

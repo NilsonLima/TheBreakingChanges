@@ -20,7 +20,8 @@ module.exports = {
             },
             'code::after': {
               content: '""'
-            }
+            },
+            code: false,
           },
         },
       },
