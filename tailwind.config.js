@@ -15,8 +15,12 @@ module.exports = {
             color: 'black',
             fontWeight: '200',
             maxWidth: '100%',
-            'blockquote p:first-of-type::before': false,
-            'blockquote p:last-of-type::after': false,
+            'code::before': {
+              content: '""'
+            },
+            'code::after': {
+              content: '""'
+            }
           },
         },
       },
