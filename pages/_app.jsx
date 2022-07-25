@@ -27,7 +27,7 @@ export default function App({ Component, pageProps, router }) {
         <meta property="og:url" content="https://thebreakingchanges.com" key="url" />
         <meta property="og:site_name" content="thebreakingchanges.com" key="site_name" />
         {/* image OG data */}
-        <meta property="og:image" content="https://thebreakingchanges.com/planner.webp" key="planner" />
+        <meta property="og:image" content="https://thebreakingchanges.com/planner.png" key="planner" />
         <meta property="og:image:alt" content="An image with dark gradient background containing the blog name at center along with website name" key="planner_alt" />
         <meta property="og:image:width" content="1366" key="planner_width" />
         <meta property="og:image:height" content="768" key="planner_height" />
@@ -37,7 +37,7 @@ export default function App({ Component, pageProps, router }) {
         <meta name="twitter:site" content="@nilsonjrx" key="twitter_site" />
         <meta name="twitter:creator" content="@nilsonjrx" key="twitter_creator" />
         <meta name="twitter:description" content={translations.description} key="twitter_description" />
-        <meta name="twitter:image" content="https://thebreakingchanges.com/planner.webp" key="twitter_image" />
+        <meta name="twitter:image:src" content="https://thebreakingchanges.com/planner.png" key="twitter_image" />
         <meta name="twitter:image:alt" content="An image with dark gradient background containing the blog name at center along with website name" key="twitter_image_alt" />
       </Head>
       <Wrapper>
