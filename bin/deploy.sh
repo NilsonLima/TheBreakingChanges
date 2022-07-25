@@ -20,7 +20,7 @@ for filename in $DEPLOY_DIR/*.html; do
   fi
 done
 
-aws s3 sync --delete $DEPLOY_DIR s3://$BUCKET_NAME --profile nilson_ljnr
+aws s3 sync $DEPLOY_DIR s3://$BUCKET_NAME --profile nilson_ljnr
 
 for filename in ${modified_files[@]}; do
   aws s3 cp $DEPLOY_DIR/$filename s3://$BUCKET_NAME/$filename --content-type "text/html" --profile nilson_ljnr
