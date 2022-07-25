@@ -9,6 +9,7 @@ export default function About() {
     <>
       <Head>
         <meta property="og:title" content="About - The Breaking Changes" key="title" />
+        <meta property="og:url" content="https://thebreakingchanges.com/about" key="url" />
       </Head>
       <div className="py-10 md:py-14 lg:py-20">
         <h1 className="font-extrabold text-4xl lg:text-5xl">

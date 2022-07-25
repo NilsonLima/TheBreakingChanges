@@ -23,7 +23,7 @@ export default function App({ Component, pageProps, router }) {
           content="Here you will find stories about how challenging and adventurous software engineering is. Content that matters. Allways."
           key="description"
         />
-        <meta property="og:url" content={`https://thebreakingchanges.com${router.route}`} key="url" />
+        <meta property="og:url" content="https://thebreakingchanges.com" key="url" />
         <meta property="og:site_name" content="thebreakingchanges.com" key="site_name" />
         {/* image OG data */}
         <meta property="og:image" content="https://s3.us-west-1.amazonaws.com/thebreakingchanges.com/planner.webp" key="planner" />

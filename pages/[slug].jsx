@@ -6,7 +6,7 @@ import Head from 'next/head';
 
 import { formatDateString } from '../src/utils';
 
-export default function Post({ content, frontmatter: { title, date, readingTime, description } }) {
+export default function Post({ content, slug, frontmatter: { title, date, readingTime, description } }) {
   return (
     <>
       <Head>
@@ -17,6 +17,7 @@ export default function Post({ content, frontmatter: { title, date, readingTime,
           content={description}
           key="description"
         />
+        <meta property="og:url" content={`https://thebreakingchanges.com/${slug}`} key="url" />
         <meta property="og:type" content="article" key="type" />
         {/* Twitter OG */}
         <meta name="twitter:label1" content="Written by" key="twitter_label_1" />
@@ -51,7 +52,7 @@ export async function getStaticProps({ params: { slug } }) {
   const html = md().use(markdownItHightlight).render(content);
 
   return {
-    props: { frontmatter, content: html },
+    props: { frontmatter, content: html, slug },
   };
 }
 
