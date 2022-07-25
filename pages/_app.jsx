@@ -26,7 +26,7 @@ export default function App({ Component, pageProps, router }) {
         <meta property="og:url" content="https://thebreakingchanges.com" key="url" />
         <meta property="og:site_name" content="thebreakingchanges.com" key="site_name" />
         {/* image OG data */}
-        <meta property="og:image" content="https://s3.us-west-1.amazonaws.com/thebreakingchanges.com/planner.webp" key="planner" />
+        <meta property="og:image" content="https://thebreakingchanges.com/planner.webp" key="planner" />
         <meta property="og:image:alt" content="An image with dark gradient background containing the blog name at center along with website name" key="planner_alt" />
         <meta property="og:image:width" content="1366" key="planner_width" />
         <meta property="og:image:height" content="768" key="planner_height" />

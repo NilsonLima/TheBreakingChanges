@@ -23,7 +23,7 @@ export default function Post({ content, slug, frontmatter: { title, date, readin
         <meta name="twitter:label1" content="Written by" key="twitter_label_1" />
         <meta name="twitter:data1" content="Nilson de Lima" key="twitter_data_1" />
         <meta name="twitter:label2" content="Reading time" key="twitter_label_2" />
-        <meta name="twitter:data2" content={readingTime} key="twitter_data_2" />
+        <meta name="twitter:data2" content={`${readingTime} minutes`} key="twitter_data_2" />
       </Head>
       <div className="py-10 md:py-14 lg:py-20">
         <article>
