@@ -4,6 +4,7 @@ import { Fragment } from 'react';
 import Head from 'next/head';
 
 import Layout from '../src/components/Layout';
+import translations from '../src/translations';
 
 import 'highlight.js/styles/github-dark.css';
 
@@ -20,7 +21,7 @@ export default function App({ Component, pageProps, router }) {
         <meta property="og:title" content="The Breaking Changes" key="title" />
         <meta
           property="og:description"
-          content="Here you will find stories about how challenging and adventurous software engineering is. Content that matters. Allways."
+          content={translations.description}
           key="description"
         />
         <meta property="og:url" content="https://thebreakingchanges.com" key="url" />
@@ -31,9 +32,13 @@ export default function App({ Component, pageProps, router }) {
         <meta property="og:image:width" content="1366" key="planner_width" />
         <meta property="og:image:height" content="768" key="planner_height" />
         {/* Twitter OG data */}
+        <meta name="twitter:title" content="The Breaking Changes" key="twitter_title" />
         <meta name="twitter:card" content="summary_large_image" key="twitter_card" />
         <meta name="twitter:site" content="@nilsonjrx" key="twitter_site" />
         <meta name="twitter:creator" content="@nilsonjrx" key="twitter_creator" />
+        <meta name="twitter:description" content={translations.description} key="twitter_description" />
+        <meta name="twitter:image" content="https://thebreakingchanges.com/planner.webp" key="twitter_image" />
+        <meta name="twitter:image:alt" content="An image with dark gradient background containing the blog name at center along with website name" key="twitter_image_alt" />
       </Head>
       <Wrapper>
         <Component {...pageProps} />

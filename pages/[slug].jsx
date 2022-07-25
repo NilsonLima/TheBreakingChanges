@@ -19,11 +19,13 @@ export default function Post({ content, slug, frontmatter: { title, date, readin
         />
         <meta property="og:url" content={`https://thebreakingchanges.com/${slug}`} key="url" />
         <meta property="og:type" content="article" key="type" />
-        {/* Twitter OG */}
+        {/* Twitter OG override */}
+        <meta name="twitter:title" content={title} key="twitter_title" />
+        <meta name="twitter:description" content={description} key="twitter_description" />
         <meta name="twitter:label1" content="Written by" key="twitter_label_1" />
         <meta name="twitter:data1" content="Nilson de Lima" key="twitter_data_1" />
         <meta name="twitter:label2" content="Reading time" key="twitter_label_2" />
-        <meta name="twitter:data2" content={`${readingTime} minutes`} key="twitter_data_2" />
+        <meta name="twitter:data2" content={`${readingTime} min`} key="twitter_data_2" />
       </Head>
       <div className="py-10 md:py-14 lg:py-20">
         <article>

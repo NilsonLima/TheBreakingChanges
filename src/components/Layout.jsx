@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 
+import translations from '../translations';
+
 export default function Layout({ children }) {
   return (
     <div>
@@ -20,7 +22,7 @@ export default function Layout({ children }) {
           <div className="h-2 w-2 rounded-full bg-white my-8" />
           <div className="text-white text-center prose prose-lg md:prose-xl md:max-w-2xl lg:max-w-5xl">
             <p>
-              Here you will find stories about how challenging and adventurous software engineering is. Content that matters. Allways. 
+              {translations.description}
             </p>
           </div>
         </div>

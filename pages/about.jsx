@@ -8,8 +8,11 @@ export default function About() {
   return (
     <>
       <Head>
+        {/* default OG override */}
         <meta property="og:title" content="About - The Breaking Changes" key="title" />
         <meta property="og:url" content="https://thebreakingchanges.com/about" key="url" />
+        {/* Twitter OG override */}
+        <meta name="twitter:title" content="About - The Breaking Changes" key="twitter_title" />
       </Head>
       <div className="py-10 md:py-14 lg:py-20">
         <h1 className="font-extrabold text-4xl lg:text-5xl">
