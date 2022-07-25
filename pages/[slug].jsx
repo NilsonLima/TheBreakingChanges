@@ -18,7 +18,7 @@ export default function Post({ content, frontmatter: { title, date, readingTime 
           <span>{`${readingTime} min read`}</span>
         </div>
         <div
-          className="prose prose-lg md:prose-xl prose-pre:w-full lg:prose-pre:max-w-4xl prose-headings:text-black overflow-x-auto"
+          className="prose prose-lg md:prose-xl prose-pre:w-full lg:prose-pre:max-w-4xl prose-headings:text-black prose-pre:px-4 overflow-x-auto"
           dangerouslySetInnerHTML={{ __html: content }}
         />
       </article>

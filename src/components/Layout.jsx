@@ -25,7 +25,7 @@ export default function Layout({ children }) {
           </div>
         </div>
       </div>
-      <div className="px-8 py-4 md:max-w-full md:px-24 lg:max-w-7xl">
+      <div className="px-6 py-4 md:max-w-full md:px-24 lg:max-w-7xl">
         {children}
       </div>
       <div className="bg-gradient-to-r from-zinc-800 to-zinc-900">
